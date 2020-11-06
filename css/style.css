@@ -1,0 +1,529 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Conv_GothamRnd-Medium';
+  src: url("../fonts/GothamRnd-Medium.eot");
+  src: local("☺"), url("../fonts/GothamRnd-Medium.woff") format("woff"), url("../fonts/GothamRnd-Medium.ttf") format("truetype"), url("../fonts/GothamRnd-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Conv_GothamRnd-Bold';
+  src: url("../fonts/GothamRnd-Bold.eot");
+  src: local("☺"), url("../fonts/GothamRnd-Bold.woff") format("woff"), url("../fonts/GothamRnd-Bold.ttf") format("truetype"), url("../fonts/GothamRnd-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Conv_GothamRnd-Book';
+  src: url("../fonts/GothamRnd-Book.eot");
+  src: local("☺"), url("../fonts/GothamRnd-Book.woff") format("woff"), url("../fonts/GothamRnd-Book.ttf") format("truetype"), url("../fonts/GothamRnd-Book.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #5e5e5e;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../img/hero/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero-container {
+  padding-top: 40px;
+  padding-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .hero-container .hero-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .hero-container .hero-header a {
+  font-family: 'Conv_GothamRnd-Bold';
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero .hero-container .hero-hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-container .hero-hello h1 {
+  font-family: 'Conv_GothamRnd-Bold';
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 5,4px;
+}
+
+.hero .hero-container .hero-hello p {
+  font-family: 'Conv_GothamRnd-Medium';
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 30px;
+  letter-spacing: 2,4px;
+}
+
+.hero .hero-container .hero-hello button {
+  font-family: 'Conv_GothamRnd-Bold';
+  padding: 21px 31px 18px 31px;
+  background-color: #16a085;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1,8px;
+}
+
+.hero .hero-container .hero-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-container .hero-social img:nth-child(1) {
+  margin-right: 16px;
+}
+
+.hero .hero-container .hero-social img:nth-child(2) {
+  margin-right: 16px;
+}
+
+.phone {
+  background-color: #f5f6f7;
+}
+
+.phone .phone-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 92px;
+}
+
+.phone .phone-container .phone-first {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.phone .phone-container .phone-first h2 {
+  font-family: 'Conv_GothamRnd-Bold';
+  color: #26a68d;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2,7px;
+  margin: 0px 0px 30px 0px;
+}
+
+.phone .phone-container .phone-first p {
+  font-family: 'Conv_GothamRnd-Book';
+  font-size: 12px;
+  letter-spacing: 1,8px;
+  line-height: 24px;
+  margin: 0px 0px 30px 0px;
+}
+
+.phone .phone-container .phone-first button {
+  font-family: 'Conv_GothamRnd-Bold';
+  padding: 21px 31px 18px 31px;
+  background-color: #16a085;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1,8px;
+}
+
+.phone .phone-container .phone-second {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.phone-two {
+  background-color: #ffffff;
+}
+
+.phone-two .phone-two-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 157px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phone-two .phone-two-container .phone-image {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.phone-two .phone-two-container .phone-text {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.phone-two .phone-two-container .phone-text h2 {
+  font-family: 'Conv_GothamRnd-Bold';
+  color: #26a68d;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2,7px;
+  margin: 0px 0px 30px 0px;
+}
+
+.phone-two .phone-two-container .phone-text p {
+  font-family: 'Conv_GothamRnd-Book';
+  font-size: 12px;
+  letter-spacing: 1,8px;
+  line-height: 24px;
+  margin: 0px 0px 30px 0px;
+}
+
+.phone-two .phone-two-container .phone-text button {
+  font-family: 'Conv_GothamRnd-Bold';
+  padding: 21px 31px 18px 31px;
+  background-color: #16a085;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1,8px;
+  margin-bottom: 30px;
+}
+
+.phone-two .phone-two-container .phone-text .pagination {
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.phone-two .phone-two-container .phone-text .first-image {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.phone-two .phone-two-container .phone-text .second-image {
+  cursor: pointer;
+}
+
+.community {
+  background-color: #f5f6f7;
+  padding: 120px 0px 120px 0px;
+}
+
+.community .community_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.community .community_container .pagination_block {
+  margin-left: auto;
+}
+
+.community .community_container .pagination_block img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.community .community_container .community_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.community .community_container .community_information .community_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.community .community_container .community_information .community_text img {
+  margin-bottom: 30px;
+}
+
+.community .community_container .community_information .community_text h2 {
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 2,4px;
+  margin-bottom: 26px;
+}
+
+.community .community_container .community_information .community_text p {
+  font-family: 'Conv_GothamRnd-Medium';
+  font-size: 10px;
+  letter-spacing: 1,5px;
+  text-align: center;
+  line-height: auto;
+}
+
+.community .community_container .community_information .community_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.community .community_container .community_information .community_photo img {
+  margin-left: 24px;
+}
+
+.form_email {
+  height: 100vh;
+  background-image: url("../img/form/form_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.form_email .form_email_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_email .form_email_container .block_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_email .form_email_container .block_form h2 {
+  color: #fff;
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 24px;
+  letter-spacing: 3,6px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.form_email .form_email_container .block_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form_email .form_email_container .block_form form input {
+  width: 200px;
+  height: 40px;
+  padding-left: 20px;
+  border: none;
+}
+
+.form_email .form_email_container .block_form form input::-webkit-input-placeholder {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2,4px;
+}
+
+.form_email .form_email_container .block_form form input:-ms-input-placeholder {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2,4px;
+}
+
+.form_email .form_email_container .block_form form input::-ms-input-placeholder {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2,4px;
+}
+
+.form_email .form_email_container .block_form form input::placeholder {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2,4px;
+}
+
+.form_email .form_email_container .block_form form button {
+  width: 63px;
+  height: 40px;
+  background-color: #16a085;
+  border: none;
+  cursor: pointer;
+}
+
+.download {
+  background-color: #f5f6f7;
+  padding-top: 93px;
+  padding-bottom: 116px;
+}
+
+.download .download_container h2 {
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.download .download_container p {
+  font-family: 'Conv_GothamRnd-Medium';
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1,8px;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.download .download_container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download .download_container .buttons button {
+  background-color: #1abc9c;
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 16px;
+  letter-spacing: 2,4px;
+  border-radius: 3px;
+  width: 296px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  margin-left: 13px;
+  margin-right: 13px;
+  color: #fff;
+}
+
+.footer {
+  background-color: #fff;
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.footer .footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_container .links {
+  margin-bottom: 22px;
+}
+
+.footer .footer_container .links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .footer_container .links .psevdo::before {
+  content: "| ";
+}
+
+.footer .footer_container .links .psevdo::after {
+  content: " |";
+}
+
+.footer .footer_container p {
+  font-family: 'Conv_GothamRnd-Bold';
+  font-size: 14px;
+  letter-spacing: 2,1px;
+}
